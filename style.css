@@ -843,10 +843,6 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -855,8 +851,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -876,6 +870,11 @@ h4 {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
+
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+
     .b-parallax {
         background-attachment: scroll;
     }
@@ -998,16 +997,3 @@ h4 {
         height: 320px;
     }
 }
-/* 
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-} */
-/* 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
-} */
